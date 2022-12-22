@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
+import logo from '/assets/shared/logo.svg';
+
 function Header() {
 	const [isOpen, setIsOpen] = useState(false);
 	const { pathname } = useLocation();
@@ -8,15 +10,11 @@ function Header() {
 	return (
 		<header className='flex items-center justify-between p-6 sm:p-0 sm:pl-10 md:pl-14 md:pt-10'>
 			<Link to={'/'}>
-				<img
-					src='/assets/shared/logo.svg'
-					alt='logo'
-					className='duration-300 hover:scale-110 hover:ease-in-out'
-				/>
+				<img src={logo} alt='logo' className='duration-300 hover:scale-110 hover:ease-in-out' />
 			</Link>
 			{!isOpen && (
 				<button onClick={() => setIsOpen((prev) => !prev)} className=' inline-flex sm:hidden'>
-					<img src='/assets/shared/icon-hamburger.svg' alt='open menu' width={24} height={24} />
+					<img src='../assets/shared/icon-hamburger.svg' alt='open menu' width={24} height={24} />
 				</button>
 			)}
 
@@ -25,7 +23,7 @@ function Header() {
 				<button
 					onClick={() => setIsOpen((prev) => !prev)}
 					className='absolute top-8 right-6 p-[2px] sm:hidden'>
-					<img src='/assets/shared/icon-close.svg' alt='close menu' width={20} height={20} />
+					<img src='../assets/shared/icon-close.svg' alt='close menu' width={20} height={20} />
 				</button>
 				<Link
 					className={`flex gap-3 border-b-[3px] sm:py-10 ${
@@ -71,7 +69,7 @@ function Header() {
 					<button
 						onClick={() => setIsOpen((prev) => !prev)}
 						className='absolute top-8 right-6 p-[2px] sm:hidden'>
-						<img src='/assets/shared/icon-close.svg' alt='close menu' width={20} height={20} />
+						<img src='../assets/shared/icon-close.svg' alt='close menu' width={20} height={20} />
 					</button>
 					<Link
 						className={`flex gap-3 p-4 sm:py-10 ${

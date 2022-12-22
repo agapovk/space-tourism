@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import data from '../../../starter-code/data.json';
+import data from '../../data.json';
 
 const { destinations } = data;
 
