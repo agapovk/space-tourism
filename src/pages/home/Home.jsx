@@ -1,6 +1,6 @@
 function Home() {
 	return (
-		<main className='mx-auto mt-6 grid max-w-[1100px] grid-cols-1 place-items-center gap-6 sm:mt-[106px] md:mt-[250px] md:mb-[150px] md:grid-cols-2'>
+		<main className='mx-auto mt-6 grid max-w-[1100px] grid-cols-1 place-items-center gap-6 sm:mt-[106px] md:mt-[250px] md:mb-auto md:grid-cols-2'>
 			<article className='grid place-items-center gap-4 px-6 sm:max-w-[450px] sm:gap-6 sm:p-0'>
 				<span className='font-narrow text-xl tracking-[4.72px] text-light-blue'>
 					SO, YOU WANT TO TRAVEL TO
